@@ -562,12 +562,20 @@ footer > div > div:last-child > div > div:active {
   opacity: 0.9;
 }
 
+@media only screen and (max-width: 1300px) {
+  .navbtns{
+    display: none;
+  }
+
+}
+
 @media only screen and (max-width: 840px) {
   #myModal {
     display: none;
     width: 400px;
     height: 700px;
   }
+
 }
 @media only screen and (max-width: 650px) {
   #hero {
@@ -580,12 +588,7 @@ footer > div > div:last-child > div > div:active {
   #hero > img {
     margin-top: 60px;
   }
-  .navbtns {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
+
   footer {
     margin-top: 88px;
     display: inline-flex;
@@ -615,5 +618,18 @@ footer > div > div:last-child > div > div:active {
     flex-wrap: wrap;
     gap: 60px;
     flex-direction: row;
+  }
+  nav > div {
+    display: flex;
+    flex-direction: column;
+    gap: 62.5px;
+    background: #fff;
+  
+  }
+  nav > div > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 }
