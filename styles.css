@@ -60,6 +60,12 @@ nav > div > ul > li > a:focus {
   align-items: center;
   gap: 30px;
 }
+.navbtns > button:hover{
+  opacity: 0.8;
+}
+.navbtns > button:active{
+  opacity: 0.9;
+}
 .navbtns > button:first-child {
   display: flex;
   padding: 20px 40px;
@@ -187,6 +193,12 @@ nav > div > ul > li > a:focus {
   justify-content: center;
   align-items: center;
 }
+.hero-left > div > button:hover{
+  opacity: 0.8;
+}
+.hero-left > div > button:active{
+  opacity: 0.9;
+}
 .hero-right {
   width: 45vw;
   height: 594px;
@@ -297,6 +309,12 @@ nav > div > ul > li > a:focus {
   font-weight: 800;
   line-height: normal;
   text-transform: capitalize;
+}
+#main > div > button:hover{
+  opacity: 0.8;
+}
+#main > div > button:active{
+  opacity: 0.9;
 }
 footer {
   margin-top: 88px;
@@ -423,9 +441,9 @@ footer > div > div:last-child > div > div {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1000;
   border-radius: 20px;
-  /* background-color: black; */
+
 }
-/* Style for the overlay background */
+
 .overlay {
   display: none;
   position: fixed;
@@ -435,18 +453,15 @@ footer > div > div:last-child > div > div {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: 999;
-  /* background-color: red; */
+
 }
 
-/* Center the content inside the popup */
 .popup-content {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-
-/* Style for the close button */
 .close-btn {
   position: absolute;
   top: 10px;
@@ -479,9 +494,6 @@ footer > div > div:last-child > div > div {
   background: #fff;
   box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.11);
   padding: 22px;
-
-  /* display: flex; */
-
   flex-wrap: wrap;
   gap: 60px;
   flex-direction: row;
@@ -492,9 +504,7 @@ footer > div > div:last-child > div > div {
 }
 #myModal > div > div {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  /* width: 45%; */
   gap: 20px;
 }
 #myModal > div > div > div {
@@ -543,4 +553,10 @@ footer > div > div:last-child > div > div {
   font-weight: 700;
   line-height: normal;
   margin-top: 15px;
+}
+footer > div > div:last-child > div > div:hover{
+  opacity: 0.8;
+}
+footer > div > div:last-child > div > div:active{
+  opacity: 0.9;
 }
