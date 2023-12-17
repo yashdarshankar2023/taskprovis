@@ -60,10 +60,10 @@ nav > div > ul > li > a:focus {
   align-items: center;
   gap: 30px;
 }
-.navbtns > button:hover{
+.navbtns > button:hover {
   opacity: 0.8;
 }
-.navbtns > button:active{
+.navbtns > button:active {
   opacity: 0.9;
 }
 .navbtns > button:first-child {
@@ -126,6 +126,7 @@ nav > div > ul > li > a:focus {
   font-weight: 700;
   line-height: 150%;
   text-transform: capitalize;
+  word-break: break-all;
 }
 .hero-left > h1 > span {
   color: var(--simorange, #f67366);
@@ -141,7 +142,8 @@ nav > div > ul > li > a:focus {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 21px */
+  line-height: 150%;
+  text-wrap: wrap;
 }
 .hero-left > div {
   display: flex;
@@ -193,10 +195,10 @@ nav > div > ul > li > a:focus {
   justify-content: center;
   align-items: center;
 }
-.hero-left > div > button:hover{
+.hero-left > div > button:hover {
   opacity: 0.8;
 }
-.hero-left > div > button:active{
+.hero-left > div > button:active {
   opacity: 0.9;
 }
 .hero-right {
@@ -206,6 +208,7 @@ nav > div > ul > li > a:focus {
   background: url("/image1.png"),
     lightgray -91.158px -33.75px / 128.617% 113.636% no-repeat;
 }
+
 #main {
   display: flex;
   justify-content: center;
@@ -310,10 +313,10 @@ nav > div > ul > li > a:focus {
   line-height: normal;
   text-transform: capitalize;
 }
-#main > div > button:hover{
+#main > div > button:hover {
   opacity: 0.8;
 }
-#main > div > button:active{
+#main > div > button:active {
   opacity: 0.9;
 }
 footer {
@@ -441,7 +444,6 @@ footer > div > div:last-child > div > div {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1000;
   border-radius: 20px;
-
 }
 
 .overlay {
@@ -453,7 +455,6 @@ footer > div > div:last-child > div > div {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: 999;
-
 }
 
 .popup-content {
@@ -554,9 +555,65 @@ footer > div > div:last-child > div > div {
   line-height: normal;
   margin-top: 15px;
 }
-footer > div > div:last-child > div > div:hover{
+footer > div > div:last-child > div > div:hover {
   opacity: 0.8;
 }
-footer > div > div:last-child > div > div:active{
+footer > div > div:last-child > div > div:active {
   opacity: 0.9;
+}
+
+@media only screen and (max-width: 840px) {
+  #myModal {
+    display: none;
+    width: 400px;
+    height: 700px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 87px;
+  }
+  #hero > img {
+    margin-top: 60px;
+  }
+  .navbtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  footer {
+    margin-top: 88px;
+    display: inline-flex;
+    padding: 10px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background: var(--simblue, #2c2d5b);
+  }
+}
+@media only screen and (max-width: 460px) {
+  #myModal {
+    display: none;
+    width: 300px;
+    height: 700px;
+
+    position: absolute;
+    left: -40px;
+    top: 60px;
+    bottom: 29px;
+    border-radius: 0px 0px 8px 8px;
+    background: #fff;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.11);
+    padding: 22px;
+    flex-wrap: wrap;
+    gap: 60px;
+    flex-direction: row;
+  }
 }
